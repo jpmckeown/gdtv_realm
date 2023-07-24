@@ -8,14 +8,15 @@ public class EnemyMover : MonoBehaviour
 
     void Start()
     {
-        pr();
+        StartCoroutine(FollowPath());
     }
 
-    void pr()
+    IEnumerator FollowPath()
     {
         foreach(Waypoint waypoint in path)
         {
             Debug.Log(waypoint.name);
+            yield return new WaitForSeconds(1f);
         }
     }
 }
