@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyMover : MonoBehaviour
 {
     public List<Waypoint> path = new List<Waypoint>();
+    public float stepDelay = 1f;
 
     void Start()
     {
@@ -16,7 +17,8 @@ public class EnemyMover : MonoBehaviour
         foreach(Waypoint waypoint in path)
         {
             Debug.Log(waypoint.name);
-            yield return new WaitForSeconds(1f);
+            transform.position = waypoint.transform.position;
+            yield return new WaitForSeconds(stepDelay);
         }
     }
 }
