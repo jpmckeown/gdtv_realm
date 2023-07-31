@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 796420055186282203, guid: f1cb26fcf6b43b446a87249622925777, type: 3}
+      propertyPath: canPlaceTower
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1157596842674199176, guid: f1cb26fcf6b43b446a87249622925777, type: 3}
       propertyPath: m_Mesh
       value: 
