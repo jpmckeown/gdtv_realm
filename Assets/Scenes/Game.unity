@@ -2239,18 +2239,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 1205712406500588304, guid: d8e2e0dc2a8ec094a899d5667f60ecb2, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5979552678043221406, guid: d8e2e0dc2a8ec094a899d5667f60ecb2, type: 3}
-      propertyPath: speed
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5979552678043221406, guid: d8e2e0dc2a8ec094a899d5667f60ecb2, type: 3}
-      propertyPath: path.Array.size
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 5979552678043221406, guid: d8e2e0dc2a8ec094a899d5667f60ecb2, type: 3}
       propertyPath: path.Array.data[0]
       value: 
