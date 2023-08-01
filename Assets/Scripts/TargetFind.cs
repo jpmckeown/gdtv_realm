@@ -18,6 +18,11 @@ public class TargetFind : MonoBehaviour
         AimWeapon();
     }
 
+    void FindClosestTarget()
+    {
+        
+    }
+
     void AimWeapon()
     {
         weapon.LookAt(target);
