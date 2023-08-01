@@ -7,13 +7,14 @@ public class TargetFind : MonoBehaviour
     [SerializeField] Transform weapon;
     [SerializeField] Transform target;
 
-    void Start()
-    {
-        target = FindObjectOfType<EnemyMover>().transform;
-    }
+    // void Start()
+    // {
+    //     target = FindObjectOfType<Enemy>().transform;
+    // }
 
     void Update()
     {
+        FindClosestTarget();
         AimWeapon();
     }
 
