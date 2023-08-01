@@ -4,22 +4,20 @@ using UnityEngine;
 
 public class ObjectPool : MonoBehaviour
 {
-    [SerializeField] GameObject intruder;
+    [SerializeField] GameObject enemyPrefab;
+    [SerializeField] float spawnTimer = 1;
 
     void Start()
     {
-        StartCoroutine(MakeIntruders());
+        StartCoroutine(SpawnEnemy());
     }
 
-    void Update()
+    IEnumerator SpawnEnemy()
     {
-        
-    }
-
-    void MakeIntruders()
-    {
-        
-        Instantiate(intruder, transform.position, Quaternion.identity);
-        yield return(1) ;
+        while(true)
+        {
+            Instantiate(enemyPrefab, transform);
+            yield return new WaitForSeconds(spawnTimer) ;
+        }
     }
 }
