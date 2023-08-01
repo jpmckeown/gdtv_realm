@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyMover : MonoBehaviour
 {
-    public List<Waypoint> path = new List<Waypoint>();
+    [SerializeField] List<Waypoint> path = new List<Waypoint>();
     [SerializeField] [Range(0f,2f)] float speed = 0.5f;
 
     void Start()
@@ -12,6 +12,11 @@ public class EnemyMover : MonoBehaviour
         StartCoroutine(FollowPath());
     }
 
+    void Findpath()
+    {
+        
+    }
+    
     IEnumerator FollowPath()
     {
         foreach(Waypoint waypoint in path)
