@@ -17,7 +17,6 @@ public class TargetFind : MonoBehaviour
 
     void FindClosestTarget()
     {
-        // refers to Enemy class
         Enemy[] enemies = FindObjectsOfType<Enemy>();
         // none identified yet
         Transform closestTarget = null;
