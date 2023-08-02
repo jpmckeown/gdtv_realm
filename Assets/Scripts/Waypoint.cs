@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class Waypoint : MonoBehaviour
 {
+    [SerializeField] Tower towerPrefab;
+
     [SerializeField] bool canPlaceTower;
     public bool CanPlaceTower { get{return canPlaceTower;} } // property
-
-    [SerializeField] GameObject towerPrefab;
 
     void OnMouseDown()
     {
         if(canPlaceTower) {
-            Debug.Log($"{transform.name} available for tower placement");
-            Instantiate(towerPrefab, transform.position, Quaternion.identity);
-            canPlaceTower = false;
+            // Debug.Log($"{transform.name} available for tower placement");
+            // bool isPlaced = towerPrefab.CreateTower(towerPrefab, transform.position);
+            // canPlaceTower = !isPlaced;
         }
         else {
             Debug.Log($"Cannot make a tower here at {transform.name}");
