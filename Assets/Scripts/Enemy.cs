@@ -12,19 +12,19 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         bank = FindObjectOfType<Bank>();
-
     }
 
-    public void rewardKill()
+    public void rewardGold()
     {
         if(bank == null) { return; }
-        bank.ChangeBalance(reward);
+        bank.gain(reward);
+                // Debug.Log("reward " + reward);
     }
 
-    public void enemySteals()
+    public void stealGold()
     {
         if(bank == null) { return; }
-        bank.ChangeBalance(penalty);
+        bank.loss(penalty);
     }
 
     void Update()

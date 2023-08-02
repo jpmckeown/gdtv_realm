@@ -14,8 +14,13 @@ public class Bank : MonoBehaviour
         currentBalance = startingBalance;
     }
 
-    public void ChangeBalance(int amount)
+    public void gain(int amount)
     {
-        currentBalance += amount;
+        currentBalance += Mathf.Abs(amount);
+    }
+
+    public void loss(int amount)
+    {
+        currentBalance -= Mathf.Abs(amount);
     }
 }

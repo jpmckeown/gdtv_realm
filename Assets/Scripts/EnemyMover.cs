@@ -57,7 +57,7 @@ public class EnemyMover : MonoBehaviour
             }
         }
 
-        enemy.enemySteals();
+        enemy.stealGold();
         gameObject.SetActive(false);
     }
 }

@@ -48,7 +48,7 @@ public class TargetFind : MonoBehaviour
         else {
             Attack(false);
         }
-        Debug.Log($"{targetDistance} {range}");
+        //Debug.Log($"{targetDistance} {range}");
     }
 
     void Attack(bool isPrimed)

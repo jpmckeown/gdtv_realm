@@ -30,7 +30,7 @@ public class EnemyHealth : MonoBehaviour
         if(currentHitPoints <= 0)
         {
             gameObject.SetActive(false);
-            enemy.rewardKill();
+            enemy.rewardGold();
         }
     }
 }
