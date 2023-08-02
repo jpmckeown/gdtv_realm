@@ -28,6 +28,7 @@ public class ObjectPool : MonoBehaviour
         {
             pool[i] = Instantiate(enemyPrefab, transform);
             pool[i].SetActive(false);
+            pool[i].name = $"Foe {i}";
         }
     }
 

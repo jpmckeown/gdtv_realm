@@ -7,11 +7,6 @@ public class TargetFind : MonoBehaviour
     [SerializeField] Transform weapon;
     [SerializeField] Transform target;
 
-    // void Start()
-    // {
-    //     target = FindObjectOfType<Enemy>().transform;
-    // }
-
     void Update()
     {
         FindClosestTarget();
@@ -20,7 +15,23 @@ public class TargetFind : MonoBehaviour
 
     void FindClosestTarget()
     {
-        
+        // refers to Enemy class
+        Enemy[] enemies = FindObjectsOfType<Enemy>();
+        // none identified yet
+        Transform closestTarget = null;
+        float maxDistance = Mathf.Infinity;
+
+        foreach(Enemy enemy in enemies)
+        {
+            float targetDistance = Vector3.Distance(transform.position, enemy.transform.position);
+
+            if(targetDistance < maxDistance)
+            {
+                closestTarget = enemy.transform;
+                maxDistance = targetDistance;
+            }
+        }
+        target = closestTarget;
     }
 
     void AimWeapon()
