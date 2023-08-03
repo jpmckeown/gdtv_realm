@@ -18,6 +18,8 @@ public class TargetFind : MonoBehaviour
     void FindClosestTarget()
     {
         Enemy[] enemies = FindObjectsOfType<Enemy>();
+        Debug.Log(this.name + "enemies count " + enemies.Length);
+
         // none identified yet
         Transform closestTarget = null;
         float maxDistance = Mathf.Infinity;

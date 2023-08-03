@@ -1053,6 +1053,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1228861996}
     m_Modifications:
+    - target: {fileID: 796420055186282203, guid: f1cb26fcf6b43b446a87249622925777, type: 3}
+      propertyPath: towerPrefab
+      value: 
+      objectReference: {fileID: 231223256576460439, guid: 41133b1166fae164aaf231d302c4b9bc, type: 3}
     - target: {fileID: 2404362430665972204, guid: f1cb26fcf6b43b446a87249622925777, type: 3}
       propertyPath: m_text
       value: 1,0
@@ -1392,7 +1396,7 @@ GameObject:
   - component: {fileID: 1245485828}
   - component: {fileID: 1245485827}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Gold balance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2693,8 +2697,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12a458cf582f92646a32894c39cd3a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingBalance: 100
+  startingBalance: 1000
   currentBalance: 0
+  displayBalance: {fileID: 1245485827}
 --- !u!1001 &3699444811758464349
 PrefabInstance:
   m_ObjectHideFlags: 0
