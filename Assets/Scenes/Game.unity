@@ -142,7 +142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1468336326620474291, guid: bc04c7df1405fef489819bdcd0ef8a58, type: 3}
       propertyPath: m_TagString
-      value: Path
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2988784363042905329, guid: bc04c7df1405fef489819bdcd0ef8a58, type: 3}
       propertyPath: m_LocalPosition.x
@@ -369,7 +369,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 202054062275307259, guid: c0edddae2fcdec74aab526e91eb63afb, type: 3}
       propertyPath: m_TagString
-      value: Path
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4600154957427102137, guid: c0edddae2fcdec74aab526e91eb63afb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -818,7 +818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1468336326620474291, guid: bc04c7df1405fef489819bdcd0ef8a58, type: 3}
       propertyPath: m_TagString
-      value: Path
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2988784363042905329, guid: bc04c7df1405fef489819bdcd0ef8a58, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1296,7 +1296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2127829498721736588, guid: 7a141443397ba954f995d25b36104e4b, type: 3}
       propertyPath: m_TagString
-      value: Path
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2350120553983107278, guid: 7a141443397ba954f995d25b36104e4b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1568,7 +1568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1468336326620474291, guid: bc04c7df1405fef489819bdcd0ef8a58, type: 3}
       propertyPath: m_TagString
-      value: Path
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2988784363042905329, guid: bc04c7df1405fef489819bdcd0ef8a58, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2116,7 +2116,7 @@ GameObject:
   - component: {fileID: 1684549100}
   m_Layer: 0
   m_Name: Path
-  m_TagString: Untagged
+  m_TagString: Path
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2275,7 +2275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7653127195666032194, guid: a0b8c17cc0180c444af3a4f1b11336a7, type: 3}
       propertyPath: m_TagString
-      value: Path
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2524,7 +2524,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1468336326620474291, guid: bc04c7df1405fef489819bdcd0ef8a58, type: 3}
       propertyPath: m_TagString
-      value: Path
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2988784363042905329, guid: bc04c7df1405fef489819bdcd0ef8a58, type: 3}
       propertyPath: m_LocalPosition.x
