@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Tower : MonoBehaviour
 {
-    // [SerializeField] int cost = 75;
+    [SerializeField] int cost = 75;
 
     int towerCount = 0;
 
@@ -15,14 +15,19 @@ public class Tower : MonoBehaviour
 
     public bool CreateTower(Tower tower, Vector3 position)
     {
-        // Bank bank = FindObjectOfType<bank>();
+        Bank bank = FindObjectOfType<Bank>();
 
-        // if(bank == null) { return; } 
+        if(bank == null) { return false; } 
 
-        var obj = Instantiate(tower, position, Quaternion.identity);
-        obj.name = "Tower " + towerCount;
-        towerCount += 1;
+        if(bank.CurrentBalance >= cost)
+        {
+            var obj = Instantiate(tower, position, Quaternion.identity);
+            obj.name = "Tower " + towerCount;
+            bank.loss(cost);
+            towerCount += 1;
+            return true;    
+        }
 
-        return true;
+        return false;
     }
 }

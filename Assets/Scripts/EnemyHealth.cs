@@ -19,11 +19,6 @@ public class EnemyHealth : MonoBehaviour
         enemy = GetComponent<Enemy>();
     }
 
-    void Update()
-    {
-
-    }
-
     void OnParticleCollision(GameObject other) {
         Debug.Log("Hit by missile from tower " + other.gameObject.name);
         currentHitPoints -= 1;

@@ -18,17 +18,11 @@ public class Enemy : MonoBehaviour
     {
         if(bank == null) { return; }
         bank.gain(reward);
-                // Debug.Log("reward " + reward);
     }
 
     public void stealGold()
     {
         if(bank == null) { return; }
         bank.loss(penalty);
-    }
-
-    void Update()
-    {
-        
     }
 }

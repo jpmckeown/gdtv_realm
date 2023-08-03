@@ -5028,8 +5028,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6373563058586393435}
   - component: {fileID: 231223256576460439}
-  - component: {fileID: 8016543268798279661}
   - component: {fileID: 9162716184019060828}
+  - component: {fileID: 8016543268798279661}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -5067,6 +5067,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c45f3a6931fabcb4eb8ad98c6a9829a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 75
+--- !u!114 &9162716184019060828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7130130137382295814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44f8c1784c569284da6f81efa82272b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 6373563058586393435}
+  projectilePfx: {fileID: 28426360947947370}
+  range: 15
+  target: {fileID: 0}
 --- !u!23 &8016543268798279661
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5109,19 +5126,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &9162716184019060828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7130130137382295814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44f8c1784c569284da6f81efa82272b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weapon: {fileID: 6373563058586393435}
-  projectilePfx: {fileID: 28426360947947370}
-  range: 15
-  target: {fileID: 0}

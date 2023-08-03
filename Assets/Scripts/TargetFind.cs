@@ -18,7 +18,7 @@ public class TargetFind : MonoBehaviour
     void FindClosestTarget()
     {
         Enemy[] enemies = FindObjectsOfType<Enemy>();
-        Debug.Log(this.name + "enemies count " + enemies.Length);
+        Debug.Log(this.name + " sees " + enemies.Length + " enemies");
 
         // none identified yet
         Transform closestTarget = null;
@@ -35,6 +35,7 @@ public class TargetFind : MonoBehaviour
             }
         }
         target = closestTarget;
+        Debug.Log(target.name + " is closest");
     }
 
     void AimWeapon()
@@ -46,11 +47,12 @@ public class TargetFind : MonoBehaviour
         if(targetDistance < range)
         {
             Attack(true);
+            // Debug.Log($"{target.name} is in range {targetDistance}, firing!");
         } 
         else {
             Attack(false);
+            // Debug.Log($"{target.name} out of range {targetDistance}");
         }
-        //Debug.Log($"{targetDistance} {range}");
     }
 
     void Attack(bool isPrimed)
