@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class Bank : MonoBehaviour
@@ -28,10 +29,22 @@ public class Bank : MonoBehaviour
     {
         currentBalance -= Mathf.Abs(amount);
         UpdateDisplay();
+
+        if(currentBalance < 0)
+        {
+            // lose game
+            RelaodScene();
+        }
     }
 
     void UpdateDisplay()
     {
         displayBalance.text = "Gold: " + currentBalance;
+    }
+
+    void RelaodScene()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.buildIndex);
     }
 }
