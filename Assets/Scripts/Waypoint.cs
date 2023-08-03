@@ -7,7 +7,7 @@ public class Waypoint : MonoBehaviour
     [SerializeField] Tower towerPrefab;
     
     [SerializeField] bool canPlaceTower;
-    public bool CanPlaceTower { get{return canPlaceTower;} } // property
+    public bool CanPlaceTower { get { return canPlaceTower; } }
 
     void OnMouseDown()
     {
